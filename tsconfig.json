@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@contracts/*": ["contracts/*"],
+      "@frontend/*": ["frontend/src/*"],
+      "@integrations/*": ["integrations/*"],
+      "@config/*": ["config/*"]
+    }
+  },
+  "include": [
+    "contracts/**/*",
+    "test/**/*",
+    "scripts/**/*",
+    "integrations/**/*",
+    "config/**/*"
+  ],
+  "exclude": ["node_modules"]
+} 
