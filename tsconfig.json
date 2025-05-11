@@ -8,18 +8,47 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "@contracts/*": ["contracts/*"],
-      "@frontend/*": ["frontend/src/*"],
-      "@integrations/*": ["integrations/*"],
-      "@config/*": ["config/*"]
-    }
+      "@contracts/*": [
+        "contracts/*"
+      ],
+      "@frontend/*": [
+        "frontend/src/*"
+      ],
+      "@integrations/*": [
+        "integrations/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
+    "config/**/*",
     "contracts/**/*",
-    "test/**/*",
-    "scripts/**/*",
     "integrations/**/*",
-    "config/**/*"
+    "scripts/**/*",
+    "test/**/*",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
-} 
+  "exclude": [
+    "node_modules"
+  ]
+}
