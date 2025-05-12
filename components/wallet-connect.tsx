@@ -1,7 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { useContracts } from "@/hooks/useContracts"
+import { Button } from "../ui-repo/components/ui/button"
+import { useContracts } from "../hooks/useContracts"
 
 export function WalletConnect() {
   const { isConnected, address, connect, disconnect } = useContracts()
